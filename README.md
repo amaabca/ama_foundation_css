@@ -1,29 +1,24 @@
-# AmaFoundationCss
+# ama foundation rails
 
-TODO: Write a gem description
+Base classes and styles for AMA
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'ama_foundation_css'
+    $ gem 'ama_foundation_rails'
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
+Put the import in your ```application.scss```:
 
-    $ gem install ama_foundation_css
+```@import "ama_foundation_css/css_base_styles";```
 
-## Usage
+Put the directives in your application.js manifest:
 
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+```
+//= require ama_foundation_css/foundation
+//= require ama_foundation_css/foundation-ready
+```
